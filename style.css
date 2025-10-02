@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-image: url(assets/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: beige;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 150px;
+  font-size: 1.5rem;
+}
+
+.langs {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+ 
+transform: scale(1);
+  animation: zoomOut 2s forwards; /* default (zoomed out) */
+ 
+}
+.langs img:hover {
+  animation: zoomIn 1s forwards;
+}
+
+/* Keyframes */
+@keyframes zoomIn {
+  from { transform: scale(1); }
+  to   { transform: scale(1.5); }
+}
+
+@keyframes zoomOut {
+  from { transform: scale(1.5); }
+  to   { transform: scale(1); }
+}
