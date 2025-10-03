@@ -26,22 +26,26 @@ body {
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
- 
-transform: scale(1);
-  animation: zoomOut 2s forwards; /* default (zoomed out) */
- 
-}
-.langs img:hover {
-  animation: zoomIn 1s forwards;
 }
 
-/* Keyframes */
-@keyframes zoomIn {
-  from { transform: scale(1); }
-  to   { transform: scale(1.5); }
+#html-logo {
+  transition: transform 200ms ease-in-out;
 }
 
-@keyframes zoomOut {
-  from { transform: scale(1.5); }
-  to   { transform: scale(1); }
+#html-logo:hover {
+  transform: scale(1.25);
+}
+#css-logo {
+  transition: transform 200ms ease-in-out;
+}
+
+#css-logo:hover {
+  transform: scale(1.25);
+}
+#js-logo {
+  transition: transform 200ms ease-in-out;
+}
+
+#js-logo:hover {
+  transform: scale(1.25);
 }
