@@ -1,39 +1,51 @@
 * {
-  margin: 0px;
+  margin: 0;
 }
 
 body {
-  background-image: url(assets/back.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(assets/back.jpg);
+  background-size: auto;
+  background-repeat: no-repeat; */
+  background-color: black;
   color: beige;
   font-family: "Josefin Sans", sans-serif;
 }
 
 #hero {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 100%;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 150px;
-  font-size: 1.5rem;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10%;
+
+}
+
+@media (max-width:600px) {
+  #hero {
+  display: grid;
+  width: 100%;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: 2rem;
+
+}
+  
 }
 
 .langs {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  
 }
 
 #html-logo {
-  transition: transform 200ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 #html-logo:hover {
   transform: scale(1.25);
+  
 }
 #css-logo {
   transition: transform 200ms ease-in-out;
