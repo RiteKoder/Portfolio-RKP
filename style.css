@@ -6,6 +6,10 @@ body {
   background-color: black;
   color: beige;
   font-family: "Josefin Sans", sans-serif;
+  background-image:url(assets/texture3.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
 }
 
 /* #container {
@@ -38,14 +42,44 @@ body {
   transform: scale(1.25);
 } */
 
-@media (max-width:600px){
-  .name-section{
+@media (max-width: 600px) {
+  .name-section {
+    /* background-image:url(assets/texture2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    
+    
+    
     display: flex;
     height: 20vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 0, 0, 0.346);
+    /* background-color: rgba(255, 0, 0, 0.346); */
+    font-size: 4vw;
   }
-  
+  .sub-heading {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .domains {
+    display: grid;
+    gap: 10px;
+    margin-top: 5%;
+  }
+  .cards {
+    display: flex;
+    width: 90vw;
+    height: 15vh;
+    /* background-color: blue; */
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .nested-cards {
+    display: inline;
+  }
 }
