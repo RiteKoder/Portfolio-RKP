@@ -77,6 +77,32 @@ body {
     margin-top: 5%;
     justify-content: center;
     align-items: center;
-    border: 3px dotted wheat;
+    border: 3px dotted rgba(0, 255, 255, 0.692);
+  }
+  .project-cards{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .projects{
+    display: flex;
+    /* margin-top: 5%; */
+    /* height: 100px; */
+    width: 90vw;
+    height: 50px;
+    background-color: #05558b;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .projects a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+  }
+  .projects a :hover{
+    
+    color: aliceblue;
+    transform: scale(2);
   }
 }
