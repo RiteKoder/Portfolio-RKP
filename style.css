@@ -70,4 +70,13 @@ body {
     height: 100px;
     width: 110px;
   }
+  .project-section{
+    height: 10vh;
+    /* width: 90vw; */
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    border: 3px dotted wheat;
+  }
 }
