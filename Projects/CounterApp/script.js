@@ -1,16 +1,16 @@
-let num = document.getElementById("num");
+let numb = document.getElementById("num");
 let track = document.getElementById("track");
 const inc = document.getElementById("inc");
 const save = document.getElementById("save");
 
-let score = parseInt(num.innerText);
+let score = parseInt(numb.innerText);
 inc.addEventListener("click", () => {
   score = score + 1;
-  num.innerText = score;
-  console.log(track);
+  numb.innerText = score;
 });
 
 save.addEventListener("click", () => {
-  track.innerText += score + "& ";
-  console.log(newtext);
+  track.textContent += score + " , ";
+  numb.textContent = 0;
+  score = 0;
 });
