@@ -81,11 +81,14 @@ body {
   }
   .project-cards{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: 5%;
     margin-top: 5%;
   }
   .projects{
     display: flex;
+    /* flex-direction: column; */
     /* margin-top: 5%; */
     /* height: 100px; */
     width: 90vw;
