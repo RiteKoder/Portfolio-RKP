@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 10px;
+            font-family: monospace;
+        }
+        body{
+            min-width: 400px;
+        }
+
+        input {
+            display: grid;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 120px;
+            background-color: green;
+            border: none;
+            color: white;
+            font-weight: bold;
+
+
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+        
+        li {
+
+            padding: 0;
+        }
+
+        a {
+            color: green;
+
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="bookmarks">
+    <button type="submit" id="btn">Save Input</button>
+    <ul id="links"></ul>
+    <script>
+        const bookmarks = document.getElementById("bookmarks")
+        // console.log(bookmarks);
+        let myBookmarks = []
+        const btn = document.getElementById("btn")
+
+        let links = document.getElementById("links")
+        btn.addEventListener("click", () => {
+            myBookmarks.push(bookmarks.value)
+            renderList()
+            bookmarks.value = ""
+
+        })
+
+        function renderList() {
+
+            let listItem = `
+            <li>
+                <a href="${bookmarks.value}" target="_blank">${bookmarks.value}</a>
+            </li>`
+
+            links.innerHTML += listItem
+            console.log(myBookmarks);
+
+
+        }
+        // function renderList() {
+        //     let listItems = ""
+        //     myBookmarks.forEach(element => {
+        //         listItems += "<li>" + element + "</li>"
+
+        //     });
+        //     links.innerHTML = listItems
+
+        // }
+
+
+
+    </script>
+</body>
+
+</html>
